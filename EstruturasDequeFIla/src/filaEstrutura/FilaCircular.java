@@ -49,7 +49,8 @@ public class FilaCircular {
     System.out.println("Fila: ");
        for(int i = 0; i < tamanho; i++){
          int valor = (inicio + i) % Vetor.length;
-           System.out.print(Vetor[valor] + " ");
+           System.out.print(Vetor[valor] + " | ");
        }
+       System.out.println("\n");
       }
     }
