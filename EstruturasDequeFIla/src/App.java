@@ -83,6 +83,5 @@ public class App {
         System.out.println("Removido foi: " +filazinha.desenfileirar());
         System.out.println("----------------------------------------------");
         filazinha.imprimir();
-
     }
 }
