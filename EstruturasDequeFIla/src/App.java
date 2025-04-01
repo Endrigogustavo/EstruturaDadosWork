@@ -52,27 +52,36 @@ public class App {
         dequeLinear.enfileiraD("8"); 
         dequeLinear.imprime();
 
+        System.out.println("\n");
         FilaCircular filazinha = new FilaCircular();
         System.out.println("----------------------------------------------");
         System.out.println("Fila Circular");
+        System.out.println("----------------------------------------------");
         System.out.println("Está cheio?" +filazinha.cheio());
+        System.out.println("----------------------------------------------");
         System.out.println("Está vazio?" +filazinha.Vazio());
 
         System.out.println("----------------------------------------------");
+        System.out.println("Add dados");
+        System.out.println("----------------------------------------------");
         filazinha.enfileirar("A");
+        filazinha.imprimir();
+        System.out.println("----------------------------------------------");
         filazinha.enfileirar("B");
+        filazinha.imprimir();
+        System.out.println("----------------------------------------------");
         filazinha.enfileirar("C");
         filazinha.imprimir();
 
-        System.out.println("\n");
         System.out.println("----------------------------------------------");
         System.out.println("Está cheio? " +filazinha.cheio());
+        System.out.println("----------------------------------------------");
         System.out.println("Está vazio? " +filazinha.Vazio());
 
         System.out.println("----------------------------------------------");
         System.out.println("Removido foi: " +filazinha.desenfileirar());
         System.out.println("Removido foi: " +filazinha.desenfileirar());
+        System.out.println("----------------------------------------------");
         filazinha.imprimir();
-
     }
 }
