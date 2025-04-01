@@ -8,11 +8,12 @@ public class App {
         DequeComposto dequeComposto = new DequeComposto();
         System.out.println("----------------------------------------------");
         System.out.println("Deque Composto");
+        System.out.println("Add no Inicio :");
         dequeComposto.EnqueueL("A");
         dequeComposto.EnqueueL("B");
         dequeComposto.EnqueueL("C");
         System.out.println("----------------------------------------------");
-        System.out.println("Add no inicio");
+        System.out.println("Add no Final:");
         dequeComposto.EnqueueR("D");
         dequeComposto.imprime();
 
@@ -52,7 +53,26 @@ public class App {
         dequeLinear.imprime();
 
         FilaCircular filazinha = new FilaCircular();
-            
+        System.out.println("----------------------------------------------");
+        System.out.println("Fila Circular");
+        System.out.println("Está cheio?" +filazinha.cheio());
+        System.out.println("Está vazio?" +filazinha.Vazio());
+
+        System.out.println("----------------------------------------------");
+        filazinha.enfileirar("A");
+        filazinha.enfileirar("B");
+        filazinha.enfileirar("C");
+        filazinha.imprimir();
+
+        System.out.println("\n");
+        System.out.println("----------------------------------------------");
+        System.out.println("Está cheio? " +filazinha.cheio());
+        System.out.println("Está vazio? " +filazinha.Vazio());
+
+        System.out.println("----------------------------------------------");
+        System.out.println("Removido foi: " +filazinha.desenfileirar());
+        System.out.println("Removido foi: " +filazinha.desenfileirar());
+        filazinha.imprimir();
 
     }
 }
