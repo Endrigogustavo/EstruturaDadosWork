@@ -43,9 +43,6 @@ public class DequeEncadeado {
         if (vazio()) {
             throw new Exception("A fila esta vazia");
         }
-
-        //VOU FAZER O DEQUEUE L o de baixo no caso
- 
         if (inicio.getProximo() == null) { // Se o Deque tiver apenas um item
             Object removido = inicio.getItem(); 
             inicio = null; 
